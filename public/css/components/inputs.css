@@ -1,4 +1,4 @@
-.login-form__input-group{
+.login-form__input-container{
     position: relative;
     margin-top: 20px;
     margin-bottom: 25px;
@@ -18,9 +18,10 @@
 
 
 .login-form__input:focus,
-.login-form__input:valid{
+.login-form__input:valid,
+.login-form__input:hover{
     border-bottom-color: #8b0000;
-    outline: none;
+    outline: #8b0000;
 }
 
 .login-form__label {
@@ -38,7 +39,6 @@
     transform: translateY(-50%); 
 
 }
-
 
 .login-form__input:focus + .login-form__label,
 .login-form__input:valid + .login-form__label {

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -18,9 +19,13 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'id_number',
+        'first_name',
+        'last_name',
         'email',
-        'password',
+        'role',
+        'status',
+        'password'
     ];
 
     /**
@@ -44,5 +49,15 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function getAuthIdentifierName()
+    {
+        return 'id_number';
+    }
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', 'active');
     }
 }
