@@ -1,0 +1,10 @@
+.login-form__logo{
+    width: 126px;
+    height: 126px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.login-form__logo:hover{
+    transform: scale(1.1);
+}

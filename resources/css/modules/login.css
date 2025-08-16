@@ -1,0 +1,134 @@
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(250, 0, 21, 1), rgba(126, 2, 2, 1));
+    -webkit-background: radial-gradient(circle, rgba(250, 0, 21, 1), rgba(126, 2, 2, 1));
+    -moz-background: radial-gradient(circle, rgba(250, 0, 21, 1), rgba(126, 2, 2, 1));
+}
+
+.login-form{
+    background:#ffffff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    height: auto;
+    max-width: 480px;
+}
+
+.login-form__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form__header-container{
+    padding: 10px 0 10px 0;
+}
+
+.login-form__title{
+    color: #2c2c2c;
+    text-align: center;
+    font-weight: normal;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+.login-form__subtitle{
+    font-weight: lighter;
+    text-align: center;
+    font-size: medium;
+    color: #bab0b0;
+}
+
+.link__container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    color: #c41e3a;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.link:hover{
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+.login-form__checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login-form__checkbox {
+    margin-left: 2px;
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.login-form__checkbox-container label {
+    color: #7f8c8d;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.info__container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #c41e3a;
+}
+
+.info__container h4 {
+    color: #c41e3a;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.info__container p {
+    font-size: 12px;
+    color: #7f8c8d;
+    line-height: 1.4;
+}
+
+.login-form__language-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3ms;
+}
+
+.toggle__label {
+    background: rgba(255, 255, 255, 1);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c757d;
+    padding: 4px;
+}
+
+.password-toggle:hover {
+    color: #007bff;
+}
